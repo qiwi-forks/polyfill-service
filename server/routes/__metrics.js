@@ -1,5 +1,3 @@
-const cache = require("../cache")
-
 module.exports = app => {
 	app.get("/__metrics", (request, response) => {
 		response.status(200);

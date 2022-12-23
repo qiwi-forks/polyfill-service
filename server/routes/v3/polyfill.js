@@ -3,7 +3,6 @@
 const mergeStream = require("merge2");
 const { Readable } = require("node:stream");
 const createCompressor = require("../../lib/create-compressor");
-const cache = require("../../cache")
 const { featureParamsToKey } = require("../../utils/cache")
 const getPolyfillParameters = require("../../lib/get-polyfill-parameters");
 const latestVersion = require("polyfill-library/package.json").version;
