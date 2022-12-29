@@ -3,7 +3,6 @@
 const mergeStream = require("merge2");
 const { Readable } = require("node:stream");
 const createCompressor = require("../../lib/create-compressor");
-const cache = require("../../cache")
 const { featureParamsToKey } = require("../../utils/cache")
 const getPolyfillParameters = require("../../lib/get-polyfill-parameters");
 const latestVersion = require("polyfill-library/package.json").version;
@@ -51,6 +50,7 @@ const contextPath = process.env.CONTEXT_PATH || "";
 module.exports = app => {
 	app.get([`${contextPath}/v3/polyfill.js`, `${contextPath}/v3/polyfill.min.js`], async (request, response, next) => {
 		const parameters = getPolyfillParameters(request);
+		const cache = app.cache;
 
 		// Map the version parameter to a version of the polyfill library.
 		const versionToLibraryMap = new Map([
