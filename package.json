@@ -1,7 +1,9 @@
 {
   "name": "@qiwi/polyfill-service",
   "description": "A polyfill combinator",
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "server/index.js",
   "contributors": [
     {
