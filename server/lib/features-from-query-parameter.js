@@ -1,7 +1,8 @@
 "use strict";
 
 module.exports = function featuresfromQueryParameter(featuresParameter, flagsParameter) {
-	const features = featuresParameter.split(",").filter((f) => f.length);
+	const features = (Array.isArray(featuresParameter) ? featuresParameter.join(',') : featuresParameter)
+		.split(",").filter((f) => f.length);
 	const globalFlags = flagsParameter ? flagsParameter.split(",") : [];
 	const featuresWithFlags = {};
 
