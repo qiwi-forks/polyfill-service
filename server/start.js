@@ -1,6 +1,5 @@
-const {memoryUsage} = require('node:process')
 const start = require('./index.js')
 
-start(app => {
-	setInterval(() => console.log('from inject', app.cache.memoryUsage, memoryUsage().heapTotal), 3000)
+start(() => {
+	console.log('\u001B[32m', `✔ Server successfully started` ,'\u001B[0m');
 })
