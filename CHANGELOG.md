@@ -1,3 +1,8 @@
+## [1.0.1](https://github.com/qiwi-forks/polyfill-service/compare/v1.0.0...v1.0.1) (2023-01-10)
+
+### Fixes & improvements
+* fix: + publishConfig ([725e35b5](https://github.com/qiwi-forks/polyfill-service/commit/725e35b51b99b2df544f0b410d004b0fab3735ec))
+
 ## [1.0.0](https://github.com/qiwi-forks/polyfill-service/compare/undefined...v1.0.0) (2023-01-10)
 
 ### Fixes & improvements
@@ -41,5 +46,3 @@
 * feat: SERVE_STATIC_SITE env option ([cdc33dab](https://github.com/qiwi-forks/polyfill-service/commit/cdc33dab8008fe421cfa499a029f8be086d1f956))
 * feat: cache and cache metrics endpoint ([7765ad9c](https://github.com/qiwi-forks/polyfill-service/commit/7765ad9c4b83e2bcc5339ee1d2dc30461db347f2))
 * feat: deps revision, move to qiwi-forks ([7bd81efb](https://github.com/qiwi-forks/polyfill-service/commit/7bd81efb74aad2c0b0bda4fb0e5dadcad2aea5c5))
-
-
